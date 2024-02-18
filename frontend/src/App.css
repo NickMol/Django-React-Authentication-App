@@ -1,0 +1,40 @@
+.myBackground{
+  width:100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(205,0,118);
+  background: linear-gradient(137deg, rgba(205,0,118,1) 0%, rgba(85,35,185,1) 68%); 
+}
+
+.whiteBox{
+  background-color: white;
+  padding: 20px; 
+  min-width: 300px;
+  height: 70%;
+  width: 25%;
+  border: 1px solid #333;
+}
+
+.itemBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+}
+
+.title{
+  font-size: 30px;
+  color: #333;
+}
+
+.myForm, 
+.myButton{
+  width: 100%;
+}
+
+.myButton{
+  background: rgb(66, 8, 160) !important;
+}
