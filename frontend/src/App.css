@@ -3,6 +3,7 @@
   height: 100vh;
   display: flex;
   align-items: center;
+
   justify-content: center;
   background: rgb(205,0,118);
   background: linear-gradient(137deg, rgba(205,0,118,1) 0%, rgba(85,35,185,1) 68%); 

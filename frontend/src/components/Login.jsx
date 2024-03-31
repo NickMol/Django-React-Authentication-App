@@ -60,8 +60,9 @@ const Login = () =>{
                     />
                 </Box>
 
-                <Box className={"itemBox"}>
+                <Box className={"itemBox"} sx={{flexDirection:'column'}}>
                     <Link to="/register"> No account yet? Please register! </Link>
+                    <Link to="/request/password_reset"> Password forgotten? Click here </Link>
                 </Box>
 
 
