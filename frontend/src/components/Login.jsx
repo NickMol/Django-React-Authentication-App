@@ -1,4 +1,5 @@
 import '../App.css'
+import {React, useState} from 'react'
 import { Box } from '@mui/material'
 import MyTextField from './forms/MyTextField'
 import MyPassField from './forms/MyPassField'
@@ -7,10 +8,12 @@ import {Link} from 'react-router-dom'
 import {useForm} from 'react-hook-form'
 import AxiosInstance from './AxiosInstance'
 import { useNavigate } from 'react-router-dom'
+import MyMessage from './Message'
 
 const Login = () =>{
     const navigate = useNavigate()
     const {handleSubmit, control} = useForm()
+    const [ShowMessage, setShowMessage] = useState(false)
 
     const submission = (data) => {
         AxiosInstance.post(`login/`,{
@@ -24,12 +27,15 @@ const Login = () =>{
             navigate(`/home`)
         })
         .catch((error) => {
+            setShowMessage(true)
             console.error('Error during login', error)
         })
     }
+    
 
     return(
         <div className={"myBackground"}> 
+            {ShowMessage ? <MyMessage text={"Login has failed, please try again, or reset your password"} color={'#EC5A76'}/> : null}
             <form onSubmit={handleSubmit(submission)}>
             <Box className={"whiteBox"}>
 

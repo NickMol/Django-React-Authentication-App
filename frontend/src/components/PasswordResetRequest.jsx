@@ -30,7 +30,7 @@ const PasswordResetRequest = () =>{
     return(
         <div className={"myBackground"}> 
 
-        {ShowMessage ? <MyMessage text={"If your email exists you have received an email with instructions for resetting the password"}/> : null}
+        {ShowMessage ? <MyMessage text={"If your email exists you have received an email with instructions for resetting the password"}  color={'#69C9AB'}/> : null}
         <form onSubmit={handleSubmit(submission)}>
 
         

@@ -28,14 +28,14 @@ const PasswordReset = () =>{
             setShowMessage(true)
             setTimeout(() =>{
                 navigate('/')
-            }, 2000 )
+            }, 6000 )
         })
       
     }
     return(
         <div className={"myBackground"}> 
 
-        {ShowMessage ? <MyMessage text={"Your password reset was successfull, you will be directed to the login page in a second"}/> : null}
+        {ShowMessage ? <MyMessage text={"Your password reset was successfull, you will be directed to the login page in a second"} color={'#69C9AB'}/> : null}
         <form onSubmit={handleSubmit(submission)}>
 
         
